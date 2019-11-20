@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+          body {background-color: #fefefd;}
+          h1   {color: #281f38; background-color:#fefefd ;}
+          #jumbo {background-color:#aba4a6d1;}
+          footer{background-color:#aba4a6d1;}
+          #fire{color:darkred;}
+          #view{background-color:#281f38; color:#fefefd;}
+          #view:hover{background-color: rgb(98, 76, 119);}
+          #add{background-color: #2a4c9f; color:#fefefd;}
+          #add:hover{background-color: rgb(71, 124, 223);}
+          a{color:#281f38; text-decoration: none; font-size: 115%;}
+          a:hover{color:#fefefd; text-decoration: none;}
+          </style>
+    <script src="https://kit.fontawesome.com/0cc8d5da0a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Hot Restaurant</title>
+</head>
+<body>
+    <div class="container">
+      <div class="jumbotron border-0 rounded shadow" id="jumbo">
+        <h1 class="text-center font-weight-bold py-3 mb-5 border-0 rounded shadow mx-5"><span class="fa fa-fire" id="fire"></span> Hot Restaurant</h1>
+        
+        <h2 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h2>
+        <br>
+        <div class="text-center">
+          <a href="/view"><button id="view" class="btn btn-lg shadow mx-3 px-4 py-2"><span class="fa fa-list-alt"></span> View Tables</button></a>
+          <a href="/add"><button id="add" class="btn btn-lg shadow mx-3 px-4 py-2"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+        </div>
+      </div>
+      <footer class="page-footer font-small shadow fixed-bottom">
+        <div class="container pt-3" id="footer">
+          <p><a href="/api/tables" class="mx-2">API Table Link</a> | <a href="/api/waitlist" class="mx-2">API Wait List</a>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+
+</html>
